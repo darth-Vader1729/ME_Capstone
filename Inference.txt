@@ -1,0 +1,150 @@
+Analyzing these thermodynamic curves allows you to predict system performance, identify phase boundaries, and optimize energy efficiency in refrigeration cycles. 
+
+SATURATION CURVES
+
+1. Saturation P-T Curves Phase Equilibrium: 
+
+R1234yf. Saturation pressures closely match conventional R134a levels at common evaporator and condenser temperatures. That yields familiar suction and discharge pressures, normal compressor displacement, and easier equipment adaptation. This is why it is widely used as a low GWP R134a replacement.
+
+R1234ze(E). Sits at noticeably lower absolute pressures for the same temperatures. Lower discharge pressure can reduce mechanical stress and sometimes reduce compression temperature. The catch is lower suction pressures and therefore larger volumetric flow. That means different compressor selection.
+
+
+
+2. Saturated Vapor & Liquid Enthalpy vs. Temperature Latent Heat Capacity: 
+
+The difference between saturated vapor enthalpy h_g and saturated liquid enthalpy h_f at a given temperature gives the latent heat of vaporization.
+
+R1234ze(E). Shows one of the largest liquid→vapor enthalpy jumps across the temperature range. That means more cooling delivered per kilogram, so lower mass flow for a given duty and smaller piping for the same capacity.
+
+R1234yf. Has a solid, mid-to-high Δh. Not the absolute best per kg, but good enough that mass flows remain moderate while avoiding extreme design changes.
+
+
+3. T-S Saturation Curves Fluid Classification: 
+
+R1234ze(E). The saturated vapor and liquid lines show a wide horizontal span (large Δs) at typical operating temperatures. That confirms the h–T observation, and implies a large latent component, which tends to improve the refrigeration effect per kg and helps COP for the heat transfer portion of the cycle.
+
+R1234yf. Shows a healthy Δs and a dome shape that keeps compression paths well within the two-phase region and a comfortable distance from the critical point at normal condensing temps. That implies predictable isentropic compression and stable heat exchanger performance.
+
+OTHER PLOTS:-
+
+| Metric            | Desired          |
+| ----------------- | ---------------- |
+| COP               | Higher is better | 
+| Power consumption | Lower is better  | 
+| Mass flow rate    | Lower is better  |
+| Cooling capacity  | Higher is better |
+
+Extended ranking (best first):
+   final_rank  refrigerant  mean_Q_kW  ...  score_power  score_mdot  combined_score
+0           1   R1234ze(Z)   1.670196  ...     1.000000    1.000000        1.000000
+1           2   R1233zd(E)   1.520062  ...     0.945519    0.842336        0.876127
+2           3      R1243zf   1.397922  ...     0.461221    0.673840        0.521530
+3           4   R1234ze(E)   1.264253  ...     0.406060    0.466107        0.400343
+4           5  R1336mzz(E)   1.044953  ...     0.257847    0.000000        0.150136
+5           6      R1234yf   1.060726  ...     0.000000    0.037846        0.015768
+
+
+1. Best performer: R1234ze(Z)
+
+Final rank: 1
+Highest cooling capacity among candidates.
+Best score for compressor power.
+Best score for mass flow rate.
+
+* It produces strong refrigeration effect.
+* It needs less compressor work.
+* It requires smaller refrigerant circulation.
+
+Engineering implication: 
+i.   Potential high efficiency system
+ii.  Lower compressor load
+iii. Smaller piping and compressor displacement.
+
+In many research papers, R1234ze(Z) indeed performs very well in medium temperature refrigeration and ORC systems, so this result is physically plausible.
+
+
+2. Second best: R1233zd(E)
+
+Final rank: 2
+Good cooling capacity.
+Low compressor power requirement.
+Moderate mass flow requirement.
+
+* Efficient refrigerant but slightly weaker than R1234ze(Z).
+
+Engineering implication:
+i.   Often used in large chillers and high efficiency systems.
+ii.  Known for very low GWP and good thermodynamic properties.
+
+
+3,4. Middle performers: R1243zf and R1234ze(E)
+
+Ranks: 3 and 4
+Moderate cooling capacity.
+Moderate compressor power.
+Moderate mass flow.
+
+* Balanced performance but not outstanding in any metric.
+
+Engineering implication:
+i.   Could be acceptable alternatives but not optimal choices.
+
+
+5. Lower performers: R1336mzz(E)
+
+Rank: 5
+Low cooling capacity.
+Very poor mass flow score.
+
+* Needs much larger refrigerant circulation to produce same cooling.
+
+Engineering implication:
+i.   Requires larger compressor displacement.
+ii.  System may become bulky.
+
+This refrigerant is actually more common in high temperature heat pumps and ORC, not typical refrigeration.
+
+
+6. Worst performer: R1234yf
+
+Rank: 6
+Lowest power score.
+Very poor mass flow score.
+Lower cooling capacity.
+
+* Requires more compressor work.
+* Needs higher circulation rate.
+
+Engineering implication:
+i.   Lower thermodynamic efficiency under the tested conditions.
+
+Despite lower thermodynamic performance, R1234yf is widely used in automotive AC because of:
+Very low GWP
+Safety and regulatory compliance.
+Overall interpretation for your project
+
+
+
+Ranking:
+
+Best overall thermodynamic candidate: R1234ze(Z)
+Strong alternative: R1233zd(E)
+
+Moderate options: R1243zf, R1234ze(E)
+
+Less suitable for this cycle: R1336mzz(E), R1234yf
+
+Key point you must mention in your presentation
+
+This ranking is condition dependent and results are valid only for:
+
+Evaporator temperature range [-40,10] °C
+Condenser temperature = 40 °C
+Compressor efficiency = 0.75
+Ideal VCRS assumptions
+
+
+Based on the combined thermodynamic scoring of cooling capacity, compressor power and mass flow rate, 
+R1234ze(Z) emerged as the best performing refrigerant for the simulated vapor compression cycle, 
+followed by R1233zd(E). 
+R1234yf showed the lowest thermodynamic performance under the selected operating conditions.
