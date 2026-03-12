@@ -167,16 +167,31 @@ project/
 
 ---
 
-# Installation
+# Installation for Local Simulation
 
-### 1. Install Python
+### 1. Clone the repository
+```bash
+git clone https://github.com/darth-Vader1729/ME_Capstone.git
+```
+
+### 2. Change directory
+```bash
+cd ME_Capstone
+```
+### 3. Create and activate a virtual environment
+Action             Windows	                           Linux / macOS
+Create	         python -m venv venv	   python3 -m venv venv
+Activate	     venv\Scripts\activate	   source venv/bin/activate
+Deactivate	deactivate	                           deactivate
+
+### 4. Install Python
 
 Python **3.12 or later** is recommended.
 
-### 2. Install required libraries
+### 5. Install required libraries
 
 ```bash
-pip install -r requirements.txt
+pip install CoolProp numpy pandas matplotlib
 ```
 
 ---
@@ -186,6 +201,7 @@ pip install -r requirements.txt
 Run the main script:
 
 ```bash
+cd scripts
 python compare_refrigerants.py
 ```
 
