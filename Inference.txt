@@ -60,7 +60,8 @@ i.   Potential high efficiency system
 ii.  Lower compressor load
 iii. Smaller piping and compressor displacement.
 
-In many research papers, R1234ze(Z) indeed performs very well in medium temperature refrigeration and ORC systems, so this result is physically plausible.
+In many research papers, R1234ze(Z) indeed performs very well 
+in medium temperature refrigeration and ORC systems, so this result is physically plausible.
 
 
 2. Second best: R1233zd(E)
@@ -148,3 +149,19 @@ Based on the combined thermodynamic scoring of cooling capacity, compressor powe
 R1234ze(Z) emerged as the best performing refrigerant for the simulated vapor compression cycle, 
 followed by R1233zd(E). 
 R1234yf showed the lowest thermodynamic performance under the selected operating conditions.
+--------------------------------------------------------------------------------------------------------------------
+
+---------------------------- PRACTICALY FEASIBLE  ---------------------------------
+
+R450A (Solstice® N13) is a non-flammable, low-toxicity (
+safety class) zeotropic blend of R134a and R1234ze(E). It serves as a direct, low-GWP (547) drop-in replacement 
+for R134a in medium/high-temperature applications, offering
+lower capacity but similar COP and reduced energy, making it suitable for chillers and heat pumps. 
+Key Details
+    Composition: 42% R134a and 58% R1234ze(E).
+    Environmental Impact: GWP is 547, which is more than 60% lower than R134a (1430).
+
+Performance: Generally provides similar efficiency (COP) to R134a, with slightly lower capacity in some systems.
+Safety: Classified as A1(non-flammable, low toxicity).
+Applications: Medium-temperature refrigeration, air-cooled/water-cooled chillers, and heat pumps.
+Operational Note: It is a zeotropic mixture with a small temperature glide (~0.4 °C), which should be considered during system design.
