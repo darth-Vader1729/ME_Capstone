@@ -238,14 +238,8 @@ R1234yf showed the lowest thermodynamic performance under the selected operating
 
 ---
 
-# Author
-Project developed as part of : Thermodynamic analysis of HydroFlouro Olefin(HFO) refrigerants using computational tools.
+# Notes
+Project developed as part of : Thermodynamic analysis of HydroFluoro Olefins (HFO) refrigerants using computational tools.
 
-
-compare_refrigerants.py
-Requires: CoolProp, numpy, pandas, matplotlib
+Requires: CoolProp, numpy, pandas, matplotlib <br>
 refer docs : https://coolprop.org/coolprop/HighLevelAPI.html#propssi-function
-
-
-
-HFO : R1132a (1,1-difluoroethylene) # NOT AVAILABLE
