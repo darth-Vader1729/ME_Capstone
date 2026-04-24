@@ -165,3 +165,10 @@ Performance: Generally provides similar efficiency (COP) to R134a, with slightly
 Safety: Classified as A1(non-flammable, low toxicity).
 Applications: Medium-temperature refrigeration, air-cooled/water-cooled chillers, and heat pumps.
 Operational Note: It is a zeotropic mixture with a small temperature glide (~0.4 °C), which should be considered during system design.
+
+PROJECT DIRECTORY :-
+sem8
+|-------compare_refrigerants.py
+|_______individual
+        |_______individual_ts
+                |-------indv_t_s.py

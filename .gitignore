@@ -1,3 +1,5 @@
 venv/
 xyz.txt
 pyvenv.cfg
+__pycache__/
+*.pyc

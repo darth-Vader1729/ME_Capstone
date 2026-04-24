@@ -3,3 +3,4 @@ CoolProp==7.2.0
 numpy==2.4.1
 pandas==3.0.0
 matplotlib==3.10.8
+plotly
